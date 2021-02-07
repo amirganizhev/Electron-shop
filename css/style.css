@@ -1,0 +1,8 @@
+body {
+	font-family: electron;
+}
+
+@font-face {
+    font-family: electron;
+    src: url(../fonts/electron.ttf);
+}
