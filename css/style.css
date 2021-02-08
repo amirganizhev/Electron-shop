@@ -1,8 +1,341 @@
+/*Общие стили*/
 body {
+	background-color: #141114;
+  	background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  	background-size: 58px 58px;
+  	background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+	margin: 0px;
 	font-family: electron;
+	font-size: 25px;
+	color: red;
+	text-shadow: 1px 1px 7px red;/*#00FFFF*/
+	letter-spacing: 2px;
 }
 
 @font-face {
     font-family: electron;
     src: url(../fonts/electron.ttf);
+}
+
+p {
+	animation-name: p-animation;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/*Шапка сайта*/
+.header h1 {
+	text-align: center; 
+}
+
+.neo {
+	animation-name: neo-animation;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.ele {
+	animation-name: ele-animation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.ctron {
+	animation-name: ctron-animation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}	
+
+/*Анимации*/
+/*Анимация шапки*/
+@keyframes neo-animation {
+	from {
+		opacity: 0.9;
+		text-shadow: 5px 5px 15px red;
+	}
+	5% {
+		opacity: 0.8;
+		text-shadow: 4px 4px 14px red;
+	}
+	10% {
+		opacity: 0.7;
+		text-shadow: 3px 3px 13px red;
+	}
+	15% {
+		opacity: 0.6;
+		text-shadow: 2px 2px 12px red;
+	}
+	20% {
+		opacity: 0.5;
+		text-shadow: 1px 1px 11px red;
+	}
+	25% {
+		opacity: 0.4;
+		text-shadow: 2px 2px 10px red;
+	}
+	30% {
+		opacity: 0.3;
+		text-shadow: 3px 3px 6px red;
+	}
+	35% {
+		opacity: 0.2;
+		text-shadow: 4px 4px 5px red;
+	}
+	40% {
+		opacity: 0.1;
+		text-shadow: 5px 5px 6px red;
+	}
+	45% {
+		opacity: 0;
+		text-shadow: 4px 4px 7px red;
+	}
+	50% {
+		opacity: 0.1;
+		text-shadow: 3px 3px 7px red;
+	}
+	55% {
+		opacity: 0.2;
+		text-shadow: 2px 2px 7px red;
+	}
+	60% {
+		opacity: 0.3;
+		text-shadow: 1px 1px 7px red;
+	}
+	65% {
+		opacity: 0.4;
+		text-shadow: 2px 2px 7px red;
+	}
+	70% {
+		opacity: 0.5;
+		text-shadow: 3px 3px 7px red;
+	}
+	75% {
+		opacity: 0.6;
+		text-shadow: 4px 4px 7px red;
+	}
+	80% {
+		opacity: 0.7;
+		text-shadow: 5px 5px 7px red;
+	}
+	85% {
+		opacity: 0.8;
+		text-shadow: 4px 4px 7px red;
+	}
+	90% {
+		opacity: 0.9;
+		text-shadow: 3px 3px 7px red;
+	}
+	95% {
+		opacity: 1;
+		text-shadow: 2px 2px 7px red;
+	}
+	to {
+		opacity: 0.9;
+		text-shadow: 1px 1px 8px red;
+	}
+}
+
+@keyframes ele-animation {
+	from {
+		opacity: 0.9;
+		text-shadow: 5px 5px 15px red;
+	}
+	5% {
+		opacity: 0.8;
+		text-shadow: 4px 4px 14px red;
+	}
+	10% {
+		opacity: 0.7;
+		text-shadow: 3px 3px 13px red;
+	}
+	15% {
+		opacity: 0.6;
+		text-shadow: 2px 2px 12px red;
+	}
+	20% {
+		opacity: 0.5;
+		text-shadow: 1px 1px 11px red;
+	}
+	25% {
+		opacity: 0.4;
+		text-shadow: 2px 2px 10px red;
+	}
+	30% {
+		opacity: 0.3;
+		text-shadow: 3px 3px 6px red;
+	}
+	35% {
+		opacity: 0.2;
+		text-shadow: 4px 4px 5px red;
+	}
+	40% {
+		opacity: 0.1;
+		text-shadow: 5px 5px 6px red;
+	}
+	45% {
+		opacity: 0;
+		text-shadow: 4px 4px 7px red;
+	}
+	50% {
+		opacity: 0.1;
+		text-shadow: 3px 3px 7px red;
+	}
+	55% {
+		opacity: 0.2;
+		text-shadow: 2px 2px 7px red;
+	}
+	60% {
+		opacity: 0.3;
+		text-shadow: 1px 1px 7px red;
+	}
+	65% {
+		opacity: 0.4;
+		text-shadow: 2px 2px 7px red;
+	}
+	70% {
+		opacity: 0.5;
+		text-shadow: 3px 3px 7px red;
+	}
+	75% {
+		opacity: 0.6;
+		text-shadow: 4px 4px 7px red;
+	}
+	80% {
+		opacity: 0.7;
+		text-shadow: 5px 5px 7px red;
+	}
+	85% {
+		opacity: 0.8;
+		text-shadow: 4px 4px 7px red;
+	}
+	90% {
+		opacity: 0.9;
+		text-shadow: 3px 3px 7px red;
+	}
+	95% {
+		opacity: 1;
+		text-shadow: 2px 2px 7px red;
+	}
+	to {
+		opacity: 0.9;
+		text-shadow: 1px 1px 8px red;
+	}
+}
+
+@keyframes ctron-animation {
+	from {
+		opacity: 0.9;
+		text-shadow: 1px 1px 12px red;
+	}
+	10% {
+		opacity: 0.8;
+		text-shadow: 1px 1px 11px red;
+	}
+	20% {
+		opacity: 0.7;
+		text-shadow: 1px 1px 10px red;
+	}
+	30% {
+		opacity: 0.6;
+		text-shadow: 1px 1px 9px red;
+	}
+	40% {
+		opacity: 0.5;
+		text-shadow: 1px 1px 8px red;
+	}
+	50% {
+		opacity: 0.6;
+		text-shadow: 1px 1px 7px red;
+	}
+	60% {
+		opacity: 0.7;
+		text-shadow: 1px 1px 6px red;
+	}
+	70% {
+		opacity: 0.8;
+		text-shadow: 1px 1px 5px red;
+	}
+	80% {
+		opacity: 0.9;
+		text-shadow: 1px 1px 6px red;
+	}
+	90% {
+		opacity: 1;
+		text-shadow: 1px 1px 7px red;
+	}
+	to {
+		opacity: 0.9;
+		text-shadow: 1px 1px 8px red;
+	}
+}
+/*Анимация тега p*/
+@keyframes p-animation {
+	from {
+		opacity: 0.9;
+		text-shadow: 1px 1px 12px red;
+	}
+	10% {
+		opacity: 0.8;
+		text-shadow: 1px 1px 11px red;
+	}
+	20% {
+		opacity: 0.7;
+		text-shadow: 1px 1px 10px red;
+	}
+	30% {
+		opacity: 0.6;
+		text-shadow: 1px 1px 9px red;
+	}
+	40% {
+		opacity: 0.5;
+		text-shadow: 1px 1px 8px red;
+	}
+	50% {
+		opacity: 0.6;
+		text-shadow: 1px 1px 7px red;
+	}
+	60% {
+		opacity: 0.7;
+		text-shadow: 1px 1px 6px red;
+	}
+	70% {
+		opacity: 0.8;
+		text-shadow: 1px 1px 5px red;
+	}
+	80% {
+		opacity: 0.9;
+		text-shadow: 1px 1px 6px red;
+	}
+	90% {
+		opacity: 1;
+		text-shadow: 1px 1px 7px red;
+	}
+	to {
+		opacity: 0.9;
+		text-shadow: 1px 1px 8px red;
+	}
+}
+
+/*Главное меню*/
+.main-menu {
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	border-top: solid 1px white;
+	border-bottom: solid 1px white;
+	padding: 20px;
+}
+
+.main-menu a {
+	font-size: 25px;
+	margin-right: 15px;
+	text-decoration: none;
+	color: red;
 }
