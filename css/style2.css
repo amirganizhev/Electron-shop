@@ -1,0 +1,67 @@
+/*Страница "Каталог"*/
+.catalog {
+	margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	overflow: hidden;
+	max-width: 250px;
+	text-align: center;
+	border: solid 1px white;
+	margin: 30px;
+	border-radius: 15px;
+	position: relative;
+	box-shadow: 0 0 15px #03e9f4;
+}
+
+.card:hover {
+	bottom: 15px;
+}
+
+.cart-sum {
+	color: white;
+}
+
+.card-image {
+	cursor: pointer;
+	border-bottom: 1px solid white;
+}
+
+.card-button {
+	margin-top: 10px; 
+	margin-bottom: 10px;
+}
+
+.button-card {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 50px;
+	outline: none;
+	font-size: 40px;
+	color: white;
+	background: transparent;
+	border: 1px solid white;
+}
+
+.button-card:hover {
+	border: none;
+	background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+

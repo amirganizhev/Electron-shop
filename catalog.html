@@ -7,6 +7,7 @@
 	<meta name="keywords" content="Электроника, электроные запчасти, магазин электроники">
 	<title>Каталог</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
 </head>
 <body>
 
@@ -17,9 +18,29 @@
 	<nav class="main-menu">
 		<a href="index.html">Наш-магазин</a>
 		<a href="catalog.html">Каталог</a>
+		<button class="button-cart"><a href="#">
+			Корзина</a><p class="cart-sum"></p><img src="images/icons/cart.svg" width="25px" height="25px">
+		</button>
 	</nav>
 
-	<main class="catalog"></main>
+	<main class="catalog">
+		<article class="cards">
+			<section class="card">
+				<img src="images/catalog/product1.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<div class="card-button">
+					<button class="button-card plus" data-id="product1">+</button>
+					<button class="button-card minus" data-id="product1">-</button>
+				</div>
+			</section>
+			<section class="card">
+				<img src="images/catalog/product2.jpg" src="товар" width="250px" height="300px" class="card-image">			
+				<div class="card-button">
+					<button class="button-card plus" data-id="product2">+</button>
+					<button class="button-card minus" data-id="product2">-</button>
+				</div>
+			</section>
+		</article>
+	</main>
 
 	<footer class="footer">
 		<hr>
