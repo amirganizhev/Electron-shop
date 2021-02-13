@@ -7,7 +7,6 @@
 	<meta name="keywords" content="Электроника, электроные запчасти, магазин электроники">
 	<title>Каталог</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style2.css">
 </head>
 <body>
 
@@ -18,9 +17,9 @@
 	<nav class="main-menu">
 		<a href="index.html">Наш-магазин</a>
 		<a href="catalog.html">Каталог</a>
-		<button class="button-cart"><a href="#">
-			Корзина</a><p class="cart-sum"></p><img src="images/icons/cart.svg" width="25px" height="25px">
-		</button>
+		<a href="#" class="cart">
+			<span class="cart-list">3</span><img src="images/icons/cart.svg" width="20px" height="20px" class="cart-image">
+		</a>
 	</nav>
 
 	<main class="catalog">
@@ -39,8 +38,61 @@
 					<button class="button-card minus" data-id="product2">-</button>
 				</div>
 			</section>
+			<section class="card">
+				<img src="images/catalog/product3.jpg" src="товар" width="250px" height="300px" class="card-image">			
+				<div class="card-button">
+					<button class="button-card plus" data-id="product3">+</button>
+					<button class="button-card minus" data-id="product3">-</button>
+				</div>
+			</section>
+			<section class="card">
+				<img src="images/catalog/product4.jpg" src="товар" width="250px" height="300px" class="card-image">			
+				<div class="card-button">
+					<button class="button-card plus" data-id="product4">+</button>
+					<button class="button-card minus" data-id="product4">-</button>
+				</div>
+			</section>
+			<section class="card">
+				<img src="images/catalog/product5.jpg" src="товар" width="250px" height="300px" class="card-image">			
+				<div class="card-button">
+					<button class="button-card plus" data-id="product5">+</button>
+					<button class="button-card minus" data-id="product5">-</button>
+				</div>
+			</section>
+			<section class="card">
+				<img src="images/catalog/product6.jpg" src="товар" width="250px" height="300px" class="card-image">			
+				<div class="card-button">
+					<button class="button-card plus" data-id="product6">+</button>
+					<button class="button-card minus" data-id="product6">-</button>
+				</div>
+			</section>
+			<section class="card">
+				<img src="images/catalog/product7.png" src="товар" width="250px" height="300px" class="card-image">			
+				<div class="card-button">
+					<button class="button-card plus" data-id="product7">+</button>
+					<button class="button-card minus" data-id="product7">-</button>
+				</div>
+			</section>
+			<section class="card">
+				<img src="images/catalog/product8.jpg" src="товар" width="250px" height="300px" class="card-image">			
+				<div class="card-button">
+					<button class="button-card plus" data-id="product8">+</button>
+					<button class="button-card minus" data-id="product8">-</button>
+				</div>
+			</section>
+			<section class="card">
+				<img src="images/catalog/product9.jpg" src="товар" width="250px" height="300px" class="card-image">			
+				<div class="card-button">
+					<button class="button-card plus" data-id="product9">+</button>
+					<button class="button-card minus" data-id="product9">-</button>
+				</div>
+			</section>
 		</article>
 	</main>
+
+	<aside>
+		<div class="modal-cart"><img src="images/icons/cros.svg" width="20px" height="20px" class="cros"></div>
+	</aside>
 
 	<footer class="footer">
 		<hr>
@@ -57,6 +109,7 @@
 	</footer>
 	
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/modalCart.js"></script>
 
 </body>
 </html>

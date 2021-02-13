@@ -52,7 +52,7 @@ body {
 
 .main-menu a {
 	font-size: 25px;
-	margin-right: 15px;
+	margin-right: 5px;
 	text-decoration: none;
 	color: white;
 	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #BFE2FF, 0 0 0.5em #BFE2FF, 0 0 0.1em #BFE2FF;
@@ -67,12 +67,27 @@ body {
                 0 0 200px #03e9f4;
 }
 
-.button-cart {
-    background: transparent;
-    outline: none;
-    border: none;
+/*Корзина*/
+.cart-image {
     cursor: pointer;
-    font-family: electron;
+}
+
+.modal-cart {
+    position: fixed;
+    top: 20%;
+    right: 35%;
+    min-height: 200px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: white;
+    display: none;
+}
+
+.modal-cart img {
+    cursor: pointer;
+    position: absolute;
+    top: -7px;
+    right: -7px;
 }
 
 /*Страница "Наш Магазин"*/
@@ -91,9 +106,67 @@ body {
 }
 
 /*Страница "Каталог"*/
+.catalog {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+.card {
+    overflow: hidden;
+    max-width: 250px;
+    text-align: center;
+    border: solid 1px white;
+    margin: 30px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 15px #03e9f4;
+}
 
+.card:hover {
+    bottom: 15px;
+}
+
+.card-image {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.card-button {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.button-card {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    font-size: 40px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+
+.button-card:hover {
+    border: none;
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
 
 /*Подвал сайта*/
 .footer {
@@ -161,4 +234,137 @@ body {
     }
 }
 
+/*Медиа запросы*/
+@media (max-width: 1225px) {
+    .catalog {
+        margin-right: 0%;
+        margin-left: 0%;
+        padding: 20px;
+    }
+}
 
+@media (max-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
+
+    .our-store {
+        margin-right: 5%;
+        margin-left: 5%;
+        padding: 15px;
+    }
+
+    .our-store article {
+        margin: 30px;
+    }
+
+    .card {
+        max-width: 150px;
+    }
+
+    .card-image {
+        width: 150px;
+        height: 200px;
+    }
+
+    .button-card {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 15px;
+    }
+
+    .our-store {
+        margin-right: 5%;
+        margin-left: 5%;
+        padding: 10px;
+    }
+
+    .our-store article {
+        margin: 10px;   
+    }
+
+    .card {
+        max-width: 100px;
+        margin: 15px;
+    }
+
+    .card-image {
+        width: 100px;
+        height: 120px;
+    }
+
+    .button-card {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-menu a {
+        font-size: 20px;
+    }
+
+    .cart-image {
+        width: 15px;
+        height: 15px;
+    }
+
+    .card {
+        max-width: 70px;
+    }
+
+    .card-image {
+        width: 70px;
+        height: 90px;
+    }
+
+    .button-card {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 355px) {
+    .main-menu a {
+        font-size: 15px;
+    }
+
+    .cart-image {
+        width: 10px;
+        height: 10px;
+    }
+
+    .card {
+        max-width: 70px;
+        margin: 7px;
+    }
+}
+
+@media (max-width: 300px) {
+    .card {
+        max-width: 50px;
+    }
+
+    .card-image {
+        width: 50px;
+        height: 70px;
+    }
+
+    .button-card {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        font-size: 5px;
+    }
+}
