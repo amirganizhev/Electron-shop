@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/shortcut.svg" type="image/x-icon">
 	<meta name="description" content="Магазин электроных товаров">
 	<meta name="keywords" content="Электроника, электроные запчасти, магазин электроники">
-	<title>Наш магазин</title>
+	<title>Каталог</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="brick-theme">
 
 	<header class="header">
 		<h1><span>NEO</span>N-<span>ele</span>ctron<span>ic</span></h1>
 	</header>
 
 	<nav class="main-menu">
-		<a href="index.html">Наш-магазин</a>
-		<a href="catalog.html">Каталог</a>
-		<a href="#" class="cart-sum">3</a><img src="images/icons/cart.svg" width="20px" height="20px" class="cart-image">
+		<button href="#">Регистрация</button>
+		<button class="change-theme">Изменить-тему</button>
+		<button class="basket">Корзина 0</button>
 	</nav>
 
-	<main class="our-store">
-		<article>
-			<h2>Кратко о нас</h2>
-			<p>Единый агрегатор торговли часто путают с электронным магазином и электронной площадкой для проведения аукционов. На самом деле это федеральный информационный ресурс, который агрегирует ценовые предложения на идентичные товары, работы и услуги в соответствии с запросом заказчика.</p>
-			<h2>Доставка</h2>
-			<p>Доставка осуществляется ежедневно во временной интервал с 10:00ч до 19:00ч. Предварительное оповещение о доставке осуществляется сотрудником доставочной организации в день оказания услуги за 1 час до приезда на указанный адрес. Стоимость доставки по г. Назрань составляет составляет от 150 рублей в зависимости от веса и объёма товара. Доставка "день в день" возможна при условии оформления заказа до 17:00ч, стоимость составляет от 200 рублей. Подъём товара включен в стоимость доставки независимо от наличия/отсутствия лифта. Стоимость доставки в населенные пункты за пределы города рассчитывается автоматически при оформлении заказа на сайте. Уточнить стоимость доставки в определенный населенный пункт Вы можете у сотрудника магазина или по телефону контактного центра 8-800-77-07-999 для связи с магазином.</p>
-			<h2>Способ оплаты</h2>
-			<p>Оплатить покупку можно несколькими способами: Наличный расчёт Вы можете оплатить покупку наличными в магазине или курьеру (при доставке товара). Пластиковые карты Безналичная оплата банковской картой в магазине и при доставке. Принимаются карты следующих платёжных систем: «VISA», «MasterCard», «Золотая Корона», «МИР». Кредит Заявку на кредит можно оформить в магазине у кредитного эксперта одного из банков-партнеров. В разделе «Кредиты» Вы можете найти информацию о банках-партнёрах и их продуктах.</p>
+	<main class="catalog">
+
+		<h2>Наш каталог</h2>
+
+		<article class="cards">
+
+			<section class="card">
+				<img src="images/catalog/product1.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<div class="card-button">
+					<button class="button-card">
+						<img src="images/icons/purchase.svg" width="20px" height="20px">
+						Купить
+					</button>
+				</div>
+			</section>
+
+			<section class="card">
+				<img src="images/catalog/product2.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<div class="card-button">
+					<button class="button-card">
+						<img src="images/icons/purchase.svg" width="20px" height="20px">
+						Купить
+					</button>
+				</div>
+			</section>
+
 		</article>
+
 	</main>
 
 	<footer class="footer">
@@ -44,6 +64,9 @@
 		</div>
 		<br>
 	</footer>
+
+	<script type="text/javascript" src="js/changeTheme.js"></script>
+	<script type="text/javascript" src="js/basket.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 /*Общие стили*/
-body {
+.brick-theme {
 	background-color: #141114;
   	background-image: linear-gradient(335deg, black 23px, transparent 23px),
     linear-gradient(155deg, black 23px, transparent 23px),
@@ -13,6 +13,20 @@ body {
 	color: white;
 	text-shadow: 1px 1px 7px #03e9f4;
 	letter-spacing: 2px;
+}
+
+.neon-theme {
+    background-image: url(..//images/background.jpg);  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0px;
+    font-family: electron;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 7px #03e9f4;
+    letter-spacing: 2px;
 }
 
 @font-face {
@@ -41,7 +55,7 @@ body {
 
 /*Главное меню*/
 .main-menu {
-	text-align: center;
+    text-align: center;
 	margin-left: auto;
 	margin-right: auto;	
 	padding: 20px;
@@ -50,15 +64,20 @@ body {
 	box-shadow: 0 0 15px #03e9f4;
 }
 
-.main-menu a {
+.main-menu button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 	font-size: 25px;
 	margin-right: 5px;
 	text-decoration: none;
 	color: white;
+    font-family: electron;
 	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #BFE2FF, 0 0 0.5em #BFE2FF, 0 0 0.1em #BFE2FF;
 }
 
-.main-menu a:hover{
+.main-menu button:hover{
     background: #03e9f4;
     color: #050801;
     box-shadow: 0 0 5px #03e9f4,
@@ -67,51 +86,18 @@ body {
                 0 0 200px #03e9f4;
 }
 
-/*Корзина*/
-.cart-image {
-    cursor: pointer;
-}
-
-.modal-cart {
-    position: fixed;
-    top: 20%;
-    right: 35%;
-    min-height: 200px;
-    width: 400px;
-    border: 1px solid white;
-    background-color: white;
-    display: none;
-}
-
-.modal-cart img {
-    cursor: pointer;
-    position: absolute;
-    top: -7px;
-    right: -7px;
-}
-
-/*Страница "Наш Магазин"*/
-.our-store {
-    margin-right: 10%;
-    margin-left: 10%;
-    border: 3px dotted #DCDCDC;
-    box-shadow: 0 0 15px #03e9f4;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.our-store article {
-    margin: 30px;
-}
-
-/*Страница "Каталог"*/
+/*Страница*/
 .catalog {
     margin-right: 10%;
     margin-left: 10%;
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.catalog h2 {
+    text-align: center;
+    margin-top: 0px;
 }
 
 .cards {
@@ -147,15 +133,15 @@ body {
 }
 
 .button-card {
-    width: 50px;
-    height: 50px;
     cursor: pointer;
     border-radius: 50px;
     outline: none;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     background: transparent;
     border: 1px solid white;
+    padding: 10px;
+    font-family: electron;
 }
 
 .button-card:hover {
@@ -200,171 +186,40 @@ body {
 	filter: drop-shadow(0 0 5px #03e9f4);
 }
 
-/*Анимации*/
-@keyframes header-animation {
-    78% {
-        color: inherit;
-        text-shadow: inherit;
+/*
+    @keyframes card-animation {
+    from {
+        max-width: 200px;
+        opacity: 0.8;
     }
-    79%{
-        color: #DCDCDC;
-    }
-    80% {
-        text-shadow: none;
-    }
-    81% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-    82% {
-        color: #DCDCDC;
-        text-shadow: none;
-    }
-    83% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-    92% {
-        color: #DCDCDC;
-        text-shadow: none;
-    }
-    92.5% {
-        color: inherit;
-        text-shadow: inherit;
-    }
-}
-
-/*Медиа запросы*/
-@media (max-width: 1225px) {
-    .catalog {
-        margin-right: 0%;
-        margin-left: 0%;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 1000px) {
-    body {
-        font-size: 20px;
-    }
-
-    .our-store {
-        margin-right: 5%;
-        margin-left: 5%;
-        padding: 15px;
-    }
-
-    .our-store article {
-        margin: 30px;
-    }
-
-    .card {
+    50% {
         max-width: 150px;
+        opacity: 0.4;
     }
-
-    .card-image {
-        width: 150px;
-        height: 200px;
-    }
-
-    .button-card {
-        width: 30px;
-        height: 30px;
-        border-radius: 30px;
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 700px) {
-    body {
-        font-size: 15px;
-    }
-
-    .our-store {
-        margin-right: 5%;
-        margin-left: 5%;
-        padding: 10px;
-    }
-
-    .our-store article {
-        margin: 10px;   
-    }
-
-    .card {
-        max-width: 100px;
-        margin: 15px;
-    }
-
-    .card-image {
-        width: 100px;
-        height: 120px;
-    }
-
-    .button-card {
-        width: 30px;
-        height: 30px;
-        border-radius: 30px;
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 500px) {
-    .main-menu a {
-        font-size: 20px;
-    }
-
-    .cart-image {
-        width: 15px;
-        height: 15px;
-    }
-
-    .card {
-        max-width: 70px;
-    }
-
-    .card-image {
-        width: 70px;
-        height: 90px;
-    }
-
-    .button-card {
-        width: 20px;
-        height: 20px;
-        border-radius: 20px;
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 355px) {
-    .main-menu a {
-        font-size: 15px;
-    }
-
-    .cart-image {
-        width: 10px;
-        height: 10px;
-    }
-
-    .card {
-        max-width: 70px;
-        margin: 7px;
-    }
-}
-
-@media (max-width: 300px) {
-    .card {
+    to {
         max-width: 50px;
+        opacity: 0;
+    }
     }
 
-    .card-image {
-        width: 50px;
-        height: 70px;
-    }
+    overflow: hidden;
+    max-width: 250px;
+    text-align: center;
+    border: solid 1px white;
+    margin: 30px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 15px #03e9f4;
 
-    .button-card {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        font-size: 5px;
-    }
+    animation-name: card-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    .card-animation {
+    animation-name: card-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
+*/
