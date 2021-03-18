@@ -88,8 +88,8 @@
 
 /*Страница*/
 .catalog {
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -108,6 +108,7 @@
 }
 
 .card {
+    height: 390px;
     overflow: hidden;
     max-width: 250px;
     text-align: center;
@@ -154,6 +155,13 @@
                 0 0 200px #03e9f4;
 }
 
+.card-animation {
+    animation-name: card-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
 /*Подвал сайта*/
 .footer {
 	text-align: center;
@@ -186,40 +194,27 @@
 	filter: drop-shadow(0 0 5px #03e9f4);
 }
 
-/*
-    @keyframes card-animation {
+/*Анимации*/
+@keyframes card-animation {
     from {
-        max-width: 200px;
-        opacity: 0.8;
+        height: 300px;
+    }
+    10% {
+        height: 200px;
+    }
+    30% {
+        height: 100px;
     }
     50% {
-        max-width: 150px;
-        opacity: 0.4;
+        height: 0px;
+    }
+    70% {
+        height: 100px;
+    }
+    90% {
+        height: 200px;
     }
     to {
-        max-width: 50px;
-        opacity: 0;
+        height: 300px;
     }
-    }
-
-    overflow: hidden;
-    max-width: 250px;
-    text-align: center;
-    border: solid 1px white;
-    margin: 30px;
-    border-radius: 15px;
-    position: relative;
-    box-shadow: 0 0 15px #03e9f4;
-
-    animation-name: card-animation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
-    .card-animation {
-    animation-name: card-animation;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
 }
-*/

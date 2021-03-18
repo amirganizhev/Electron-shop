@@ -1,15 +1,21 @@
 /*Кнопка КУПИТЬ*/
-let buttonCard = document.querySelectorAll(".button-card");
+const buttonCard = document.querySelectorAll(".button-card");
 /*Корзина*/
-let basket = document.querySelector(".basket");
+const basket = document.querySelector(".basket");
+/*Карточка товара*/
+const card = document.querySelectorAll(".card");
 /*Счетчик корзины*/
 let counterBasket = 0;
 
 for (let i = 0; i < buttonCard.length; i++) {
 
-buttonCard[i].onclick = () => {
-	counterBasket++;
-	basket.textContent = 'Очистить' + ' ' + counterBasket;
+	buttonCard[i].onclick = () => {
+		counterBasket++;
+		basket.textContent = 'Очистить-корзину' + ' ' + counterBasket;
+		for (let j = 0; j < card.length; j++) {
+			card[i].classList.add("card-animation");
+			setTimeout(() => card[i].classList.remove("card-animation"), 500);
+		}
 	}
 
 }
