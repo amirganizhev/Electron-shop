@@ -1,5 +1,5 @@
-let changeTheme = document.querySelector('.change-theme');
-let body = document.querySelector('body');
+const changeTheme = document.querySelector('.change-theme');
+const body = document.querySelector('body');
 
 changeTheme.onclick = () => {
 	body.classList.toggle('brick-theme'); 
