@@ -86,6 +86,74 @@
                 0 0 200px #03e9f4;
 }
 
+.registration-form {
+    background-color: #141114;
+    position: fixed;
+    width: 40%;
+    height: 65%;
+    bottom: 25%;
+    left: 30%;
+    border: 3px solid #DCDCDC;
+    box-shadow: 0 0 5px #03e9f4;
+    border-radius: 0px 25px 0px 25px;
+    display: none;
+}
+
+.registration-cross {
+    cursor: pointer;
+    position: relative;
+    left: -20px;
+    top: -20px;
+    filter: drop-shadow(0 0 5px red);
+}
+
+.registration-cross:hover {
+    filter: drop-shadow(0 0 5px #03e9f4);
+}
+
+.forms {
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.form-control {
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    outline: none;
+    
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 2px #03e9f4,
+                0 0 15px #03e9f4,
+                0 0 20px #03e9f4,
+                0 0 500px #03e9f4;
+}
+
+.registration-button {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20px;
+    outline: none;
+    background-color: #03e9f4;
+    font-family: electron;
+    border: none;
+}
+
+.registration-button:hover {
+    box-shadow: 0 0 2px #03e9f4,
+                0 0 15px #03e9f4,
+                0 0 20px #03e9f4,
+                0 0 500px #03e9f4;
+}
+
 /*Страница*/
 .catalog {
     margin-right: 5%;
@@ -331,13 +399,6 @@
                 0 0 25px #03e9f4,
                 0 0 50px #03e9f4,
                 0 0 200px #03e9f4;
-}
-
-.open-help-animation {
-    animation-name: open-help-animation;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
 }
 
 /*Подвал сайта*/

@@ -22,6 +22,7 @@ helpOpen.onclick = () => {
 		helpButton[2].style.display = 'none';
 	}
 }
+
 /*Закрытие окна помощи*/
 let helpClose = document.querySelector('.help-close');
 
@@ -41,16 +42,18 @@ function helpPopupClose() {
 	setTimeout(() => helpWindow.style.bottom = "-370px", 350);
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
-
+/*Текст вопроса*/
+let helpAnswer = document.querySelector('.help-answer-message');
+/*Текст ответа*/
+let helpQuestion = document.querySelector('.help-question');
+/*Кнопка ответа на вопрос*/
 let helpButton = document.querySelectorAll('.help-button');
 
-let helpAnswer = document.querySelector('.help-answer-message');
-let helpQuestion = document.querySelector('.help-question');
-
+/*Выбор кнопки Да или Нет*/
 for(let i = 0; i < helpButton.length; i++) {
 
 	helpButton[0].onclick = () => {
+
 		helpAnswer.textContent = "Да";
 		setTimeout(() => helpQuestion.textContent = ".", 100);
 		setTimeout(() => helpQuestion.textContent = "..", 200);
@@ -62,7 +65,7 @@ for(let i = 0; i < helpButton.length; i++) {
 		setTimeout(() => helpQuestion.textContent = "..", 800);
 		setTimeout(() => helpQuestion.textContent = "...", 900);
 		setTimeout(() => {
-			helpQuestion.textContent = "Мы вам не поможем?";
+			helpQuestion.textContent = "Мы вам тут не поможем?";
 			helpButton[0].style.display = 'none';
 			helpButton[1].style.display = 'none';
 			helpButton[2].style.display = 'block';
@@ -76,4 +79,3 @@ for(let i = 0; i < helpButton.length; i++) {
 	}
 
 }
-

@@ -16,7 +16,7 @@
 	</header>
 
 	<nav class="main-menu">
-		<button href="#">Регистрация</button>
+		<button class="registration-link">Регистрация</button>
 		<button class="change-theme">Изменить-тему</button>
 		<button class="basket">Корзина 0</button>
 	</nav>
@@ -35,42 +35,63 @@
 			</section>
 
 			<section class="card">
-				<img src="images/catalog/product2.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<img src="images/catalog/product2.jpg" width="250px" height="300px" class="card-image">		
 				<div class="card-button">
 					<button class="button-card">Купить</button>
 				</div>
 			</section>
 
 			<section class="card">
-				<img src="images/catalog/product3.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<img src="images/catalog/product3.jpg" width="250px" height="300px" class="card-image">		
 				<div class="card-button">
 					<button class="button-card">Купить</button>
 				</div>
 			</section>
 
 			<section class="card">
-				<img src="images/catalog/product4.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<img src="images/catalog/product4.jpg" width="250px" height="300px" class="card-image">		
 				<div class="card-button">
 					<button class="button-card">Купить</button>
 				</div>
 			</section>
 
 			<section class="card">
-				<img src="images/catalog/product5.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<img src="images/catalog/product5.jpg" width="250px" height="300px" class="card-image">		
 				<div class="card-button">
 					<button class="button-card">Купить</button>
 				</div>
 			</section>
 
 			<section class="card">
-				<img src="images/catalog/product6.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<img src="images/catalog/product6.jpg" width="250px" height="300px" class="card-image">		
 				<div class="card-button">
 					<button class="button-card">Купить</button>
 				</div>
 			</section>
 
 			<section class="card">
-				<img src="images/catalog/product7.jpg" src="товар" width="250px" height="300px" class="card-image">		
+				<img src="images/catalog/product7.jpg" width="250px" height="300px" class="card-image">		
+				<div class="card-button">
+					<button class="button-card">Купить</button>
+				</div>
+			</section>
+
+			<section class="card">
+				<img src="images/catalog/product8.png" width="250px" height="300px" class="card-image">		
+				<div class="card-button">
+					<button class="button-card">Купить</button>
+				</div>
+			</section>
+
+			<section class="card">
+				<img src="images/catalog/product9.jpg" width="250px" height="300px" class="card-image">		
+				<div class="card-button">
+					<button class="button-card">Купить</button>
+				</div>
+			</section>
+
+			<section class="card">
+				<img src="images/catalog/product10.jpg" width="250px" height="300px" class="card-image">		
 				<div class="card-button">
 					<button class="button-card">Купить</button>
 				</div>
@@ -78,26 +99,53 @@
 
 		</article>
 
-	</main>
+		<article>
 
-	<aside class="help-window">
-		<button class="help-open">Помощь</button>
-		<button class="help-close">Закрыть</button>
-		<div class="help-description">Если нужна помощь, напишите!</div>
-		<hr>
-		<div class="help-message">
-		    <div class="help-question">Нужна помощь?</div>
-		</div>
-		<div class="help-answer">
-			<div class="help-answer-message">. . .</div>
-		</div>
-		<hr>
-		<center>
-			<button class="help-button">Да</button>
-			<button class="help-button">Нет</button>
-			<button class="help-button" style="display: none;">Хорошо</button>
-		</center>
-	</aside>
+		<section class="help-window">
+			<button class="help-open">Помощь</button>
+			<button class="help-close">Закрыть</button>
+			<div class="help-description">Если нужна помощь, напишите!</div>
+			<hr>
+			<div class="help-message">
+			    <div class="help-question">Нужна помощь?</div>
+			</div>
+			<div class="help-answer">
+				<div class="help-answer-message">. . .</div>
+			</div>
+			<hr>
+			<center>
+				<button class="help-button">Да</button>
+				<button class="help-button">Нет</button>
+				<button class="help-button" style="display: none;">Хорошо</button>
+			</center>
+		</section>
+
+		</article>
+
+		<article class="registration-form">
+			<img src="images/icons/cross.svg" width="40px" height="40px" class="registration-cross">
+			<section class="forms">
+		  		<label class="form-label" for="name">Имя:</label>
+		  		<br>
+		  		<input type="text" class="form-control registration-name" placeholder="Введите имя" id="name">
+		  		<br>
+		  		<label class="form-label" for="surname">Фамилия:</label>
+		  		<br>
+		  		<input type="text" class="form-control registration-surname" placeholder="Введите фамилию" id="surname">
+		  		<br>	
+		  		<label class="form-label" for="mail">@mail:</label>
+		  		<br>
+		  		<input type="text" class="form-control registration-mail" placeholder="Введите @mail" id="mail">
+		  		<br>
+		  		<label class="form-label" for="password">Пароль:</label>
+		  		<br>
+		  		<input type="text" class="form-control registration-password" placeholder="Введите пароль" id="password">
+		  		<br>
+		  		<button class="registration-button">Регистрация</button> 
+	  		</section>
+		</article>
+
+	</main>
 
 	<footer class="footer">
 		<hr>
@@ -115,7 +163,8 @@
 
 	<script type="text/javascript" src="js/changeTheme.js"></script>
 	<script type="text/javascript" src="js/basket.js"></script>
-	<script type="text/javascript" src="js/help.js"></script>
+	<script type="text/javascript" src="js/helpPopup.js"></script>
+	<script type="text/javascript" src="js/registrationPopup.js"></script>
 
 </body>
 </html>
