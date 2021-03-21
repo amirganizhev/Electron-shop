@@ -89,9 +89,9 @@
 .registration-form {
     background-color: #141114;
     position: fixed;
-    width: 40%;
-    height: 65%;
-    bottom: 25%;
+    width: 500px;
+    height: 470px;
+    top: 10%;
     left: 30%;
     border: 3px solid #DCDCDC;
     box-shadow: 0 0 5px #03e9f4;
@@ -112,8 +112,7 @@
 }
 
 .forms {
-    margin-left: 100px;
-    margin-top: 0px;
+    margin-left: 90px;
 }
 
 .form-control {
@@ -124,7 +123,6 @@
     margin-top: 10px;
     text-align: center;
     outline: none;
-    
     border: none;
 }
 
@@ -457,3 +455,214 @@
         height: 300px;
     }
 }
+
+/*Медиа запросы*/
+@media (max-width: 1200px) {
+    .registration-form {
+        width: 500px;
+        height: 400px;
+    }
+    .form-control {
+        width: 80%;
+        height: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .registration-button {
+        height: 30px;
+    }
+
+    .help-window {
+        width: 220px;
+        height: 280px;
+    }
+    .help-open {
+        position: fixed;
+        width: 100px;
+        font-size: 15px;
+        top: -32px;
+        left: -3px;
+    }
+    .help-close {
+        width: 100px;
+        font-size: 15px;
+        top: -32px;
+        left: -3px;
+    }
+    .help-description {
+        margin-top: -20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .help-message {
+        font-size: 15px;
+        width: 100px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .help-answer {
+        width: 70px;
+        margin-left: 120px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .help-button {
+        font-size: 15px;
+        width: 60px;
+        padding: 5px;
+    }
+}
+
+/*.help-window {
+    background-color: #141114;
+    position: fixed;
+    width: 300px;
+    height: 360px;
+    border: 3px solid #DCDCDC;
+    bottom: -370px;
+    right: 10px;
+    box-shadow: 0 0 5px #03e9f4;
+    border-radius: 0px 15px 0px 0px;
+    z-index: 2;
+}
+
+.help-window hr {
+    background-color: white;
+    border: 2px solid #DCDCDC;
+}
+
+.help-open {
+    position: relative;
+    padding: 5px;
+    top: -42px;
+    left: -3px;
+    border-bottom: none;
+    text-align: center;
+    width: 150px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: electron; 
+    border: 3px solid #DCDCDC;
+    border-bottom: none;
+    background: #03e9f4;
+    color: #050801;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.help-open:hover {
+    box-shadow: 0 0 2px #03e9f4,
+                0 0 15px #03e9f4,
+                0 0 20px #03e9f4,
+                0 0 500px #03e9f4;
+}
+
+.help-close {
+    display: none;
+    position: relative;
+    padding: 5px;
+    top: -42px;
+    left: -3px;
+    border-bottom: none;
+    text-align: center;
+    width: 150px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: electron; 
+    border: 3px solid #DCDCDC;
+    border-bottom: none;
+    background: #03e9f4;
+    color: #050801;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.help-description {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    text-shadow: none;
+}
+
+.help-message {
+    text-align: center;
+    width: 200px;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-shadow: none;
+}
+
+.help-question {
+    color: black;
+    border-radius: 12px;
+    padding: 5px;
+    background: white;
+    position: relative;
+    z-index: 3;
+}
+
+.help-answer {
+    text-align: center;
+    width: 100px;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    margin-left: 180px;
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+
+.help-answer::after {
+    content: '';
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    left: 40px;
+    background: white;
+    transform: skewX(30deg) skewY(48deg);
+}
+
+.help-answer-message {
+    color: black;
+    border-radius: 12px;
+    padding: 5px;
+    background: white;
+    position: relative;
+    z-index: 3;
+}
+
+.help-button {
+    width: 120px;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    font-family: electron;
+}
+
+.help-button:hover {
+    border: none;
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}*/
