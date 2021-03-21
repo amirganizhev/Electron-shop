@@ -63,7 +63,7 @@ registrationButton.onclick = () => {
 	const url = "ССЫЛКА_НА_СЕРВЕР";
 	/*Переменная данных для отправки на сервер*/
 	const params = registrationName.value + ' ' + registrationSurname.value + ' ' + registrationMail.value + ' ' + registrationPassword.value;
-	/*Открытие запроса, синхронный - true*/
+	/*Открытие запроса, асинхронный - true, синхронный - false*/
 	xhttp.open("POST", url, true);
 	/*Конфигурация запросов заголовков,
 	показывает как отправлять данные,
