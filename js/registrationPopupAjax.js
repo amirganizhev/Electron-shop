@@ -1,24 +1,24 @@
 /*Форма регистрации*/
-let registrationForm = document.querySelector(".registration-form");
+const registrationForm = document.querySelector(".registration-form");
 
 /*Кнопка Регистрация*/
-let registrationLink = document.querySelector(".registration-link");
+const registrationLink = document.querySelector(".registration-link");
 
 /*Имя*/
-let registrationName = document.querySelector(".registration-name");
+const registrationName = document.querySelector(".registration-name");
 /*Фамилия*/
-let registrationSurname = document.querySelector(".registration-surname");
+const registrationSurname = document.querySelector(".registration-surname");
 /*Почта*/
-let registrationMail = document.querySelector(".registration-mail");
+const registrationMail = document.querySelector(".registration-mail");
 /*Пароль*/
-let registrationPassword = document.querySelector(".registration-password");
+const registrationPassword = document.querySelector(".registration-password");
 
 registrationLink.onclick = () => {
 	registrationForm.style.display = "block";
 }
 
 /*Крестик закрытия формы регистрации*/
-let registrationCross = document.querySelector(".registration-cross");
+const registrationCross = document.querySelector(".registration-cross");
 
 registrationCross.onclick = () => {
 	clearForm();
@@ -27,15 +27,15 @@ registrationCross.onclick = () => {
 /*-------------------------------------AJAX-запрос-------------------------------------*/
 
 /*Кнопка отправки формы*/
-let registrationButton = document.querySelector(".registration-button");
+const registrationButton = document.querySelector(".registration-button");
 
 /*AJAX запрос по клику на кнопку*/
 registrationButton.onclick = () => {
 
 	/*Регулярные выражения*/
-	let russian_letters_reg = /[а-я]/i;
-	let mail_reg = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
-	let password_reg = /[A-Za-z0-9]/;
+	const russian_letters_reg = /[а-я]/i;
+	const mail_reg = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+	const password_reg = /[A-Za-z0-9]/;
 	/*Валидация имени*/
 	if (!russian_letters_reg.test(registrationName.value)) {
 		alert("НЕКОРРЕКТНОЕ ИМЯ: используйте только русские буквы");
@@ -58,11 +58,11 @@ registrationButton.onclick = () => {
 	} 
 
 	/*Создание обьекта, для посылание запроса на различные ресурсы*/	
-	let xhttp = new XMLHttpRequest();
+	const xhttp = new XMLHttpRequest();
 	/*Ссылка на сервер*/
-	let url = "ССЫЛКА_НА_СЕРВЕР";
+	const url = "ССЫЛКА_НА_СЕРВЕР";
 	/*Переменная данных для отправки на сервер*/
-	let params = registrationName.value + registrationSurname.value + registrationMail.value + registrationPassword.value;
+	const params = registrationName.value + ' ' + registrationSurname.value + ' ' + registrationMail.value + ' ' + registrationPassword.value;
 	/*Открытие запроса, синхронный - true*/
 	xhttp.open("POST", url, true);
 	/*Конфигурация запросов заголовков,
@@ -83,7 +83,7 @@ registrationButton.onclick = () => {
 		}
 	}
 	/*Очистка форм*/
-	clearForm();
+	clearForm(); 
 }
 
 /*Очистка форм*/

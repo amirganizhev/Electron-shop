@@ -1,8 +1,8 @@
 /*Окно помощи*/
-let helpWindow = document.querySelector('.help-window');
+const helpWindow = document.querySelector('.help-window');
 
 /*Открытие окна помощи*/
-let helpOpen = document.querySelector('.help-open');
+const helpOpen = document.querySelector('.help-open');
 
 helpOpen.onclick = () => {
 	helpOpen.style.display = "none";
@@ -24,7 +24,7 @@ helpOpen.onclick = () => {
 }
 
 /*Закрытие окна помощи*/
-let helpClose = document.querySelector('.help-close');
+const helpClose = document.querySelector('.help-close');
 
 helpClose.onclick = () => {
 	helpPopupClose();
@@ -43,11 +43,11 @@ function helpPopupClose() {
 }
 
 /*Текст вопроса*/
-let helpAnswer = document.querySelector('.help-answer-message');
+const helpAnswer = document.querySelector('.help-answer-message');
 /*Текст ответа*/
-let helpQuestion = document.querySelector('.help-question');
+const helpQuestion = document.querySelector('.help-question');
 /*Кнопка ответа на вопрос*/
-let helpButton = document.querySelectorAll('.help-button');
+const helpButton = document.querySelectorAll('.help-button');
 
 /*Выбор кнопки Да или Нет*/
 for(let i = 0; i < helpButton.length; i++) {
