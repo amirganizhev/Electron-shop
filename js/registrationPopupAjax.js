@@ -75,11 +75,13 @@ registrationButton.onclick = () => {
 	/*Функция, которая показывает результат только после загрузки на сервер*/
 	xhttp.onload = function () {
 		console.log(xhttp.status);
+		/*Если статус не равен 201, тоесть ошибка, то запрос отправлен неудачно. 
+		В остальных случаях все отправится*/
 		if (xhttp.status !== 201) {
+			console.log('POST запрос отправлен неудачно');
+		} else {
 			console.log('POST запрос отправлен удачно');
 			console.log(xhttp.response);
-		} else {
-			console.log('POST запрос отправлен неудачно');
 		}
 	}
 	/*Очистка форм*/
